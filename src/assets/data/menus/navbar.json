@@ -1,0 +1,50 @@
+{
+  "data":[
+  {
+    "text": "Dashboard",
+    "icon" : "fa fa-desktop fa-fw",
+    "routerLink" : "dashboard"
+  },
+    {
+      "text": "Email",
+      "icon" : "fa fa-envelope fa-fw",
+      "routerLink" : "email"
+    },
+    {
+      "text": "Profile",
+      "icon" : "fa fa-user fa-fw",
+      "routerLink" : "profile"
+    },
+  {
+    "text": "Pages",
+    "icon" : "fa fa-id-card-o fa-fw",
+    "childrens": [
+      {
+        "text": "Login",
+        "icon" : "fa fa-sign-in fa-fw",
+        "routerLink":"login"
+      },
+      {
+        "text": "Employee Registration",
+        "icon" : "fa fa-address-book-o fa-fw",
+        "routerLink":"employee-registration"
+      }
+    ]
+  },
+    {
+      "text": "Reports",
+      "icon" : "fa fa-picture-o fa-fw",
+      "childrens": [
+        {
+          "text": "Issue",
+          "icon" : "fa fa-ticket fa-fw",
+          "routerLink":"issue"
+        },
+        {
+          "text": "Group By Issue",
+          "icon" : "fa fa-ticket fa-fw",
+          "routerLink":"group-by-issue"
+        }
+      ]
+    }
+]}

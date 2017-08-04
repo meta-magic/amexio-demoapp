@@ -1,0 +1,78 @@
+{
+  "data": [
+    {
+      "text": "Inbox",
+      "expanded":false,
+      "checked": false,
+      "icon": "fa fa-inbox"
+    },{
+      "text": "Sent Mail",
+      "expanded": false,
+      "checked": false,
+      "icon": "fa fa-envelope-o"
+    },{
+      "text": "Trash",
+      "expanded": false,
+      "checked": false,
+      "icon": "fa fa-trash-o"
+    },
+    {
+      "text": "Label",
+      "expanded": false,
+      "checked": false,
+      "icon": "fa fa-tag",
+      "children": [
+        {
+          "text": "High",
+          "expanded": false,
+          "checked": false,
+          "icon": "fa fa-tag fa-lg"
+        },{
+          "text": "Medium",
+          "expanded": false,
+          "checked": false,
+          "icon": "fa fa-tag fa-md"
+        },{
+          "text": "Low",
+          "expanded": false,
+          "checked": false,
+          "icon": "fa fa-tag "
+        }
+      ]
+    },
+    {
+      "text": "Contacts",
+      "expanded": true,
+      "checked": false,
+      "icon": "fa fa-users",
+      "children": [
+        {
+          "text": "Ashutosh Jadhav",
+          "expanded": false,
+          "checked": false,
+          "icon": ""
+        },{
+          "text": "Ketan Gote",
+          "expanded": false,
+          "checked": false,
+          "icon": ""
+        },{
+          "text": "Araf Karsh Hamid",
+          "expanded": false,
+          "checked": false,
+          "icon": ""
+        },{
+          "text": "Sagar Jadhav",
+          "expanded": false,
+          "checked": false,
+          "icon": ""
+        },{
+          "text": "Pratik Kelwalkar",
+          "expanded": false,
+          "checked": false,
+          "icon": ""
+        }
+      ]
+    }
+  ]
+}

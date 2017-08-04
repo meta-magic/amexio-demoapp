@@ -1,0 +1,79 @@
+<div class="row">
+  <div class="col-lg-12">
+    <amexio-card-pane>
+      <amexio-pane-header>
+        Email
+      </amexio-pane-header>
+      <amexio-pane-body>
+        <div class="row">
+          <div class="col-lg-3">
+            <div style="text-align: center">
+              <amexio-btn [label]="'Compose'" [type]="'danger'" [size]="'small'"[tooltipMessage]="'Compose'" (click)="toggle()"></amexio-btn>
+            </div>
+            <br>
+            <amexio-tree-view [dataReader]="'data'" [httpMethod]="'get'"
+                              [httpUrl]="'assets/data/emailmenu.json'"
+                              (selectedRecord)="onRowSelect($event)">
+              <ng-template #amexioTreeTemplate let-tree let-icon="icon" let-node="node">
+                <i [attr.class]="node.icon"></i> &nbsp; {{tree.text}}
+              </ng-template>
+            </amexio-tree-view>
+          </div>
+          <br>
+          <div class="col-lg-9">
+            <amexio-data-table
+              [title]="'Inbox'"
+              [pageSize] = "10"
+              [dataReader]="'response.data'"
+              [checkboxSelect]="true"
+              [httpUrl]="'assets/data/email.json'"
+              [httpMethod]="'get'"
+              (selectedRowData)="onRowSelect($event)"
+              (rowSelect)="onRowClick($event)">
+              <amexio-data-table-column [dataIndex]="'from'" [dataType]="'string'" [hidden]="false" [text]="'From'"></amexio-data-table-column>
+              <amexio-data-table-column [dataIndex]="'title'" [dataType]="'string'" [hidden]="false" [text]="'Title'"></amexio-data-table-column>
+              <amexio-data-table-column [dataIndex]="'date'" [dataType]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
+            </amexio-data-table>
+          </div>
+        </div>
+      </amexio-pane-body>
+      <amexio-pane-action>
+          <div style="float: right">
+            <amexio-btn-group [size]="'small'">
+              <amexio-btn-group-action [label]="'Delete'" [type]="'danger'" [tooltipMessage]="'delete'" [icon]="'trash'" ></amexio-btn-group-action>
+              <amexio-btn-group-action [label]="'Unread'" [type]="'success'" [tooltipMessage]="'unread'" [icon]="'book'" ></amexio-btn-group-action>
+              <amexio-btn-group-action [label]="'Read'" [type]="'primary'" [tooltipMessage]="'read'" [icon]="'check-circle'" ></amexio-btn-group-action>
+            </amexio-btn-group>
+          </div>
+      </amexio-pane-action>
+    </amexio-card-pane>
+  </div>
+</div>
+
+<amexio-window-pane [(showWindow)]="isComposeOpen" [title]="'New Message'" [closable]="true" [size]="2">
+  <amexio-pane-body>
+    <div class="row">
+      <div class="col-lg-12">
+        <amexio-text-input [fieldLabel]="'To'" name ="to"
+                           [hasLabel]="false"
+                           [placeholder]="'To'">
+        </amexio-text-input>
+        <amexio-text-input [fieldLabel]="'Subject'" name ="subject"
+                           [hasLabel]="false"
+                           [placeholder]="'Subject'">
+        </amexio-text-input>
+      </div>
+      <div class="col-lg-12">
+        <amexio-textarea-input [fieldLabel]="'Content'"  [placeholder]="'Subject'"></amexio-textarea-input>
+      </div>
+    </div>
+  </amexio-pane-body>
+  <amexio-pane-action>
+    <div style="float: right;">
+      <amexio-btn-group [size]="'small'">
+        <amexio-btn-group-action [label]="'Discard'" [type]="'danger'" [tooltipMessage]="'delete'"  ></amexio-btn-group-action>
+        <amexio-btn-group-action [label]="'Send'" [type]="'success'" [tooltipMessage]="'unread'" ></amexio-btn-group-action>
+      </amexio-btn-group>
+    </div>
+  </amexio-pane-action>
+</amexio-window-pane>

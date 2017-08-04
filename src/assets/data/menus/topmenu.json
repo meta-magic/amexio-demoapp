@@ -1,0 +1,15 @@
+{
+  "menus" : [
+    {
+      "label" : "",
+      "icon":"fa fa-home fa-fw fa-lg"
+    },
+    {
+      "label" : "",
+      "icon":"fa fa-bell fa-fw fa-lg"
+    },{
+      "label" : "John Doe",
+      "icon":"fa fa-user-circle fa-fw fa-lg"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "response": {
+    "success": true,
+    "message": "Fetching  Data  Request Succeeded: State",
+    "data": [
+      {
+        "stateName": "Maharashtra",
+        "stateCode": "1"
+      },{
+        "stateName": "Goa",
+        "stateCode": "2"
+      },{
+        "stateName": "Kerala",
+        "stateCode": "3"
+      }
+    ]
+  }
+}

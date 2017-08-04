@@ -1,0 +1,20 @@
+<nav class="navbar fixed-top navbar-toggleable-sm navbar-light bg-faded" xmlns="http://www.w3.org/1999/html">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">
+    <img src="assets/images/logos/amexio-logo.png" width="35" height="35" alt=""> Amexio Demo App
+  </a>
+  <div class="collapse navbar-collapse justify-content-between" id="navbar">
+    <div class="navbar-nav">
+    </div>
+    <div class="navbar-nav">
+      <ng-container *ngFor="let menuItem of menuData">
+        <a class="nav-item nav-link active" [attr.href]="menuItem.link" [target]="menuItem.label == 'Home' ? '' : '_blank'">{{menuItem.label}}</a>
+
+        <i [class]="menuItem.icon" style="padding-top:12px;" aria-hidden="true"></i>
+      </ng-container>
+    </div>
+  </div>
+</nav>

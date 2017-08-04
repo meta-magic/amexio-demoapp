@@ -1,0 +1,89 @@
+<div class="row">
+  <div class="col-lg-12">
+    <table>
+      <td>
+        <tr>  Rating Received
+          <amexio-rating-input [(ngModel)]="rate"
+                               name="rate"
+                               [max]="max" name="rate"
+                               [readonly]="isReadonly">
+          </amexio-rating-input>
+        </tr>
+      </td>
+    </table>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-lg-6">
+    <amexio-card-pane [enableHeader]="false"  [enableFooter]="false">
+      <amexio-pane-body>
+        <div style="text-align: center">
+          <img src="./../../assets/images/person/karsh.jpg"  class="rounded-circle" alt="Cinque Terre" width="100" height="100">
+          <br>
+          <label> Araf Karsh Hamid</label>
+          <br>
+          <label>Co Founder / Chief Technology Officer</label>
+          <br>
+          <div class="d-flex justify-content-center">
+            <div class="p-2">
+              <amexio-btn [label]="''" [type]="'primary'" [size]="'small'" [tooltipMessage]="'facebook'" [icon]="'facebook-official '"></amexio-btn>
+
+            </div>
+            <div class="p-2">
+              <amexio-btn [label]="''" [type]="'warning'" [size]="'small'" [tooltipMessage]="'twitter'" [icon]="'twitter'"></amexio-btn>
+
+            </div>
+            <div class="p-2">
+              <amexio-btn [label]="''" [type]="'danger'" [size]="'small'" [tooltipMessage]="'google'" [icon]="'google-plus-official'"></amexio-btn>
+            </div>
+            <div class="p-2">
+              <amexio-btn [label]="''" [type]="'primary'" [size]="'small'" [tooltipMessage]="'email'" [icon]="'envelope-o'"></amexio-btn>
+            </div>
+           </div>
+          <br>
+          <amexio-btn [label]="'Follow'" [type]="'primary'" [tooltipMessage]="'follow'"></amexio-btn>
+        </div>
+
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <br>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
+      <amexio-pane-body>
+        <table>
+          <tr>
+            <td><i class="fa fa-home" aria-hidden="true"></i> Pune, India</td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-clock-o" aria-hidden="true"></i> Member since 6 months ago</td>
+          </tr>
+          <tr>
+            <td><i class="fa fa-globe" aria-hidden="true"></i> https://www.metamagicglobal.com</td>
+          </tr>
+          <hr>
+          <tr>
+            <td>About Me
+              <br>
+              My journey started long before I was born and it will not end with my death.
+              The Journey towards Eternity - In search of our existence.
+              </td>
+          </tr>
+        </table>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-12">
+    <amexio-card-pane [enableFooter]="false">
+      <amexio-pane-header>
+        Activity
+      </amexio-pane-header>
+      <amexio-pane-body>
+      2017:
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+</div>

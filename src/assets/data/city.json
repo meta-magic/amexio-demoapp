@@ -1,0 +1,15 @@
+{
+  "response": {
+    "success": true,
+    "message": "Fetching  Data  Request Succeeded: State",
+    "data": [
+      {
+        "cityName": "Pune",
+        "cityCode": "1"
+      },{
+        "cityName": "Mumbai",
+        "cityCode": "2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "response": {
+    "success": true,
+    "message": "Fetching  Data  Request Succeeded: Issue",
+    "data": [
+      {
+        "status": "Open",
+        "issue":"Bug with .share operator?",
+        "severity":"High",
+        "date":"10-06-2017"
+      },{
+        "status": "Close",
+        "issue":"e.preventDefault broken in ie8",
+        "severity":"Low",
+        "date":"01-06-2017"
+      },{
+        "status": "Close",
+        "issue":"Third groupBy argument (key serializer) ignored",
+        "severity":"Medium",
+        "date":"16-06-2017"
+      },{
+        "status": "Open",
+        "issue":"Animate no longer supports objects",
+        "severity":"Medium",
+        "date":"16-06-2017"
+      },{
+        "status": "Close",
+        "issue":"Automatic build-version-publish after 1.0",
+        "severity":"Medium",
+        "date":"15-06-2017"
+      }
+    ]
+  }
+}
