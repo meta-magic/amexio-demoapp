@@ -1,4 +1,4 @@
-# A Demo App Built Using [Amexio (Bootstrap 4 Version) Library](amexio.org)
+# A Demo App Built Using [Amexio (Bootstrap 4 Version) Library](https://amexio.tech/)
 
 ## Prerequisite
 Node, Npm & Angular CLI
