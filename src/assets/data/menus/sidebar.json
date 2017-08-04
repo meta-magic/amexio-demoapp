@@ -3,17 +3,17 @@
   {
     "text": "Dashboard",
     "icon" : "fa fa-desktop fa-fw",
-    "routerLink" : "dashboard"
+    "routerLink" : "/home/dashboard"
   },
     {
       "text": "Email",
       "icon" : "fa fa-envelope fa-fw",
-      "routerLink" : "email"
+      "routerLink" : "/home/email"
     },
     {
       "text": "Profile",
       "icon" : "fa fa-user fa-fw",
-      "routerLink" : "profile"
+      "routerLink" : "/home/profile"
     },
   {
     "text": "Pages",
@@ -22,12 +22,12 @@
       {
         "text": "Login",
         "icon" : "fa fa-sign-in fa-fw",
-        "routerLink":"login"
+        "routerLink":"/home/login"
       },
       {
         "text": "Employee Registration",
         "icon" : "fa fa-address-book-o fa-fw",
-        "routerLink":"employee-registration"
+        "routerLink":"/home/employee-registration"
       }
     ]
   },
@@ -38,12 +38,12 @@
         {
           "text": "Issue",
           "icon" : "fa fa-ticket fa-fw",
-          "routerLink":"issue"
+          "routerLink":"/home/issue"
         },
         {
           "text": "Group By Issue",
           "icon" : "fa fa-ticket fa-fw",
-          "routerLink":"group-by-issue"
+          "routerLink":"/home/group-by-issue"
         }
       ]
     }

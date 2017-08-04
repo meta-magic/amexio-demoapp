@@ -1,27 +1,2 @@
-<top-nav-bar></top-nav-bar>
-<div class="container-fluid" (window:resize)="onResize($event)">
 
-  <div class="row">
-    <div class="col-lg-2" style="border-right: 1px solid #ddd; min-height: 1000px;">
-      <amexio-sidemenubar
-        [width]="'16%'"
-        [httpUrl]="'assets/data/menus/navbar.json'"
-        [httpMethod]="'get'"
-        [dataReader]="'data'" [toPosition]="58" [expanded]="true"
-        (selectedNode)="routeToLink($event)">
-        <ng-template #amexioNavHeaderTmpl let-navHeader="navHeader">
-          &nbsp;<i [attr.class]="navHeader.icon"></i>&nbsp;<b>{{navHeader.text}}</b>
-        </ng-template>
-        <ng-template #amexioMenuHeaderTmpl let-menuHeader="menuHeader">
-          <i [attr.class]="menuHeader.icon"></i>&nbsp;{{menuHeader.text}}
-        </ng-template>
-        <ng-template #amexioSubMenuTmpl let-subMenus="subMenus">
-          <i [attr.class]="subMenus.icon"></i>&nbsp;{{subMenus.text}}
-        </ng-template>
-      </amexio-sidemenubar>
-    </div>
-    <div class="col-lg-10" style="margin-top: 80px;">
-      <router-outlet></router-outlet>
-    </div>
-  </div>
-</div>
+<router-outlet></router-outlet>

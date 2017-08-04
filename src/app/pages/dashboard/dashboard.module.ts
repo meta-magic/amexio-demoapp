@@ -21,7 +21,6 @@ const routes: Routes = [
   exports: [RouterModule],
   declarations : [
     DashboardComponent
-  ],
-  providers : []
+  ]
 })
 export class DashboardModule { }

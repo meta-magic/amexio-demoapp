@@ -2,16 +2,15 @@ import { Component } from '@angular/core';
 import {Router} from "@angular/router";
 declare var $;
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'home',
+  templateUrl: 'home.html'
 })
-export class AppComponent {
+export class HomeComponent {
   isMobile : boolean;
   deviceHeight : any;
   deviceWidth : any;
   constructor(private _router : Router){
-    this._router.navigate(['/landing']);
+    this._router.navigate(['/home/dashboard']);
   }
   routeToLink(data: any){
     if(!data.hasOwnProperty('childrens') && data.routerLink)
@@ -24,11 +23,6 @@ export class AppComponent {
       this.isMobile = true;
     }
   }
-  OnClickB(){
-  debugger;
-    this._router.navigate(['/home']);
-  }
-
   onResize(event:any){
     this.reAdjust();
     if (event.target.innerWidth < 768) {

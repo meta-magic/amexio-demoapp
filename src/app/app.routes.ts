@@ -2,6 +2,7 @@ import {Routes} from "@angular/router";
 /**
  * Created by sagar on 2/8/17.
  */
+/*
 export const APP_ROUTE: Routes = [{
   path: '', redirectTo: 'dashboard', pathMatch: 'full'
 },
@@ -28,3 +29,4 @@ export const APP_ROUTE: Routes = [{
     path:'issue',loadChildren:'./pages/report/issue/issue.module#IssueModule'
   }
 ]
+*/
