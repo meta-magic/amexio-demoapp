@@ -21,7 +21,7 @@
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
-    "amexio-ng-extensions": "file:../amexio-ui/amexio.github.io/dist/amexio-ng-extensions-2.0.2.tgz",
+    "amexio-ng-extensions": "^2.0.3",
     "bootstrap": "^4.0.0-alpha.6",
     "bootstrap-datepicker": "^1.7.1",
     "bootstrap-timepicker": "^0.5.2",
