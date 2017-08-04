@@ -3,12 +3,18 @@
 ## Prerequisite
 Node, Npm & Angular CLI
 
+To install the Angular CLI:
+
+```bash
+npm install -g @angular/cli
+```
+
 ### Note :Please Install the above before you proceed
 
 
 ## Getting Started
-1) Git Clone this Project in a folder
-2) cd into the folder
+1) Git Clone this Project in a folder `git clone https://github.com/meta-magic/amexio-demoapp.git`
+2) cd into the folder `amexio-demoapp`
 3) Run `npm install` 
 4) Now simply run `ng serve` & Navigate to `http://localhost:4200/` 
 
