@@ -24,7 +24,7 @@ git clone https://github.com/meta-magic/amexio-demoapp.git
 npm install
 ```
 
-4) Now simply run following and Navigate to http://localhost:4200/
+4) Now simply run following command and Navigate to http://localhost:4200/
 ```bash
 ng serve
 ````
