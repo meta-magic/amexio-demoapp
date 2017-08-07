@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 declare var $;
 @Component({
@@ -6,7 +6,7 @@ declare var $;
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   isMobile : boolean;
   deviceHeight : any;
   deviceWidth : any;
@@ -24,11 +24,6 @@ export class AppComponent {
       this.isMobile = true;
     }
   }
-  OnClickB(){
-  debugger;
-    this._router.navigate(['/home']);
-  }
-
   onResize(event:any){
     this.reAdjust();
     if (event.target.innerWidth < 768) {
@@ -36,5 +31,9 @@ export class AppComponent {
     } else {
       this.isMobile = false;
     }
+  }
+
+  ngOnInit(){
+    this.reAdjust();
   }
 }

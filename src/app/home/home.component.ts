@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Router} from "@angular/router";
 declare var $;
 @Component({
   selector: 'home',
   templateUrl: 'home.html'
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit{
   isMobile : boolean;
   deviceHeight : any;
   deviceWidth : any;
@@ -30,5 +30,9 @@ export class HomeComponent {
     } else {
       this.isMobile = false;
     }
+  }
+
+  ngOnInit(){
+    this.reAdjust();
   }
 }

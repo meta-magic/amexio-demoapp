@@ -1,7 +1,6 @@
 <top-nav-bar></top-nav-bar>
 <div class="container-fluid" (window:resize)="onResize($event)">
-
-  <div class="row">
+  <div *ngIf="!isMobile" class="row">
     <div class="col-lg-2" style="border-right: 1px solid #ddd; min-height: 1000px;">
       <amexio-sidemenubar
         [width]="'16%'"
@@ -23,5 +22,37 @@
     <div class="col-lg-10" style="margin-top: 80px;">
       <router-outlet></router-outlet>
     </div>
+  </div>
+  <div *ngIf="isMobile" class="row">
+    <table>
+      <tr>
+        <td>
+          <amexio-sidemenubar
+            [width]="'90%'"
+            [httpUrl]="'assets/data/menus/sidebar.json'"
+            [httpMethod]="'get'"
+            [dataReader]="'data'" [toPosition]="60" [expanded]="false"
+            (selectedNode)="routeToLink($event)">
+            <ng-template #amexioNavHeaderTmpl  let-navHeader="navHeader">
+              &nbsp;<i [attr.class]="navHeader.icon"></i>&nbsp;<b>{{navHeader.text}}</b>
+            </ng-template>
+            <ng-template #amexioMenuHeaderTmpl  let-menuHeader="menuHeader">
+              <i [attr.class]="menuHeader.icon"></i>&nbsp;{{menuHeader.text}}
+            </ng-template>
+            <ng-template #amexioSubMenuTmpl  let-subMenus="subMenus">
+              <i [attr.class]="subMenus.icon"></i>&nbsp;{{subMenus.text}}
+            </ng-template>
+          </amexio-sidemenubar>
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <br><br><br><br><br>
+          <router-outlet></router-outlet>
+        </td>
+      </tr>
+    </table>
+
   </div>
 </div>
