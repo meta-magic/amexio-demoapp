@@ -13,7 +13,13 @@
     </div>
     <div class="navbar-nav">
       <a class="nav-item nav-link active" routerLink="#" >Home</a>
+      <a class="nav-item nav-link active" [attr.href]="'https://www.amexio.tech/features'"
+         [target]="'_blank'">Features</a>
       <a class="nav-item nav-link active" routerLink="/home/dashboard" >Demo</a>
+      <a class="nav-item nav-link active" [attr.href]="'http://www.amexio.org/showcaseapp/v2/index.html#/home'"
+         [target]="'_blank'">API</a>
+      <a class="nav-item nav-link active" [attr.href]="'https://amexio.tech/download'"
+         [target]="'_blank'">Download</a>
       <a class="nav-item nav-link active" [attr.href]="'https://github.com/meta-magic/amexio-demoapp.git'"
          [target]="'_blank'"
       >Git</a>
