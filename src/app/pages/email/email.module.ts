@@ -5,8 +5,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {CommonModule} from "@angular/common";
 import {FormsModule} from "@angular/forms";
-import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {EmailComponent} from "./email.component";
+import {AmexioWidgetModule} from "../../../components/index";
 
 const routes: Routes = [
   { path: '', component: EmailComponent }

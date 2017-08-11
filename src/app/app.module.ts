@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import {AmexioWidgetModule, CommonHttpService} from "amexio-ng-extensions";
-import {RouterModule, Routes} from "@angular/router";
+import {RouterModule, Routes} from '@angular/router';
 import {HttpModule} from "@angular/http";
 import {FormsModule} from "@angular/forms";
 import {BrowserModule} from "@angular/platform-browser";
 import {LandingPageComponent} from "./landingpage.component";
+import {AmexioWidgetModule} from "../components/index";
+import {CommonHttpService} from "../components/common.http.service";
+import {ChartLoaderService} from "../components/modules/charts/chart.loader.service";
 const APP_ROUTE: Routes = [
   { path: '', component: AppComponent},
   {path:'landing',component:LandingPageComponent},
@@ -25,7 +26,7 @@ const APP_ROUTE: Routes = [
     FormsModule,
     RouterModule.forRoot(APP_ROUTE, { useHash: true }),
   ],
-  providers: [CommonHttpService],
+  providers: [CommonHttpService,ChartLoaderService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

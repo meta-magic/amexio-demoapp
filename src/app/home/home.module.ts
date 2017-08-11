@@ -4,10 +4,10 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {FormsModule} from "@angular/forms";
-import {AmexioWidgetModule} from "amexio-ng-extensions";
 import {HomeComponent} from "./home.component";
 import {CommonModule} from "@angular/common";
 import {TopNavBarComponent} from "../layout/topnavbar.component";
+import {AmexioWidgetModule} from "../../components/index";
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -15,6 +15,9 @@ const routes: Routes = [
     children: [
       {
         path: 'dashboard', loadChildren: './../pages/dashboard/dashboard.module#DashboardModule'
+      },
+      {
+        path: 'issue-status', loadChildren: './../pages/issuestatus/issuestatus.module#IssueStatusModule'
       },
       {
         path: 'email', loadChildren: './../pages/email/email.module#EmailModule'

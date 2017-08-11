@@ -25,9 +25,14 @@
         "routerLink":"/home/login"
       },
       {
-        "text": "Employee Registration",
+        "text": "Register Employee",
         "icon" : "fa fa-address-book-o fa-fw",
         "routerLink":"/home/employee-registration"
+      },
+      {
+        "text": "Issue Status",
+        "icon" : "fa fa-exclamation fa-fw",
+        "routerLink":"/home/issue-status"
       }
     ]
   },

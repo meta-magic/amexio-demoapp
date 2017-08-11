@@ -1,146 +1,43 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6">
-      <amexio-card-pane [showCard]="true" [enableFooter]="false">
-        <amexio-pane-header>
-          Issue Status
-        </amexio-pane-header>
-        <amexio-pane-body>
-          <table width="100%">
-            <tr>
-              <td width="15%">Open</td>
-              <td align="left">
-                <amexio-progress-bar [showProgress]="true"
-                                     [infinteMode]="false"
-                                     [currentValue]="70"
-                                     [progressType]="'warning'"
-                >
-                </amexio-progress-bar>
-              </td>
-            </tr>
-            <tr>
-              <td width="15%">Close</td>
-              <td align="left">
-                <amexio-progress-bar [showProgress]="true"
-                                     [infinteMode]="false"
-                                     [currentValue]="20"
-                                     [progressType]="'danger'"
-                >
-                </amexio-progress-bar>
-              </td>
-            </tr>
-            <tr>
-              <td width="20%">In-Progress</td>
-              <td align="left">
-                <amexio-progress-bar [showProgress]="true"
-                                     [infinteMode]="false"
-                                     [currentValue]="10"
-                                     [progressType]="'info'"
-                >
-                </amexio-progress-bar>
-              </td>
-            </tr>
-          </table>
-        </amexio-pane-body>
-      </amexio-card-pane>
+      <amexio-chart-column [data]="columnStackData" [isColumnStacked]="true"  [height]="400">
+        <amexio-chart-title [title]="'Motivation and Energy Level Throughout the Day'"></amexio-chart-title>
+        <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+      </amexio-chart-column>
     </div>
     <div class="col-lg-6">
-      <amexio-card-pane [showCard]="true" [enableFooter]="false">
-        <amexio-pane-header>
-          Issue By Severity
-        </amexio-pane-header>
-        <amexio-pane-body>
-
-          <table width="100%">
-            <tr>
-              <td width="20px">Low</td>
-              <td align="left">
-                <amexio-progress-bar [showProgress]="true"
-                                     [infinteMode]="false"
-                                     [currentValue]="20"
-                                     [progressType]="'info'"
-                >
-
-                </amexio-progress-bar>
-              </td>
-            </tr>
-            <tr>
-              <td width="20px">High</td>
-              <td align="left">
-                <amexio-progress-bar [showProgress]="true"
-                                     [infinteMode]="false"
-                                     [currentValue]="50"
-                                     [progressType]="'danger'"
-                >
-
-                </amexio-progress-bar>
-              </td>
-            </tr>
-            <tr>
-              <td width="20px">Medium</td>
-              <td align="left">
-                <amexio-progress-bar [showProgress]="true"
-                                     [infinteMode]="false"
-                                     [currentValue]="30"
-                                     [progressType]="'warning'"
-                >
-
-                </amexio-progress-bar>
-              </td>
-            </tr>
-          </table>
-        </amexio-pane-body>
-      </amexio-card-pane>
+      <amexio-chart-bar [data]="barStackData" [isBarStacked]="true"  [height]="400">
+        <amexio-chart-title [title]="'Company Performance'"></amexio-chart-title>
+        <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+      </amexio-chart-bar>
     </div>
   </div>
-  <br>
+  <br><br>
   <div class="row">
     <div class="col-lg-6">
-      <amexio-card-pane [showCard]="true">
-        <amexio-pane-header>
-          Open Issue
-        </amexio-pane-header>
-        <amexio-pane-body>
-          <amexio-checkbox name="openissue"
-                           [dataReader]="'response.data'"
-                           [displayField]="'issueName'"
-                           [valueField]="'checked'"
-                           [checkBoxGroupDownBindData]="openIssuedata">
-          </amexio-checkbox>
-        </amexio-pane-body>
-        <amexio-pane-action>
-
-          <table>
-            <tr>
-              <td valign="top">
-                <amexio-text-input name="issuename"
-                                   [placeholder]="'Issue name'" [hasLabel]="false">
-                </amexio-text-input>
-              </td>
-              <td valign="top">
-                <amexio-btn [label]="'Add'" [type]="'warning'"></amexio-btn>
-              </td>
-            </tr>
-
-          </table>
-        </amexio-pane-action>
-      </amexio-card-pane>
+      <amexio-chart-donut [data]="donutData">
+        <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+        <amexio-chart-title [title]="'My Daily Activities'"></amexio-chart-title>
+      </amexio-chart-donut>
     </div>
     <div class="col-lg-6">
-      <amexio-card-pane [showCard]="true" [enableFooter]="false">
-        <amexio-pane-header>
-          Customer Feedback
-        </amexio-pane-header>
-        <amexio-pane-body>
-          <div style="background:#ddd">
-            <amexio-carousel [isContent]="true"
-                             [dataReader]="'data'"
-                             [httpMethod]="'get'"
-                             [httpUrl]="'assets/data/feedback.json'">
-            </amexio-carousel>
-          </div>
-        </amexio-pane-body>
-      </amexio-card-pane>
+    <amexio-chart-area [data]="areaData" [height]="300" >
+      <amexio-chart-title [title]="'Company Performance'"></amexio-chart-title>
+      <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+    </amexio-chart-area>
+    </div>
+<br><br><br>
+    <div class="row">
+      <div class="col-lg-2">
+      </div>
+      <div class="col-lg-8">
+        <amexio-chart-line [data]="lineData" [height]="300" [width]="550">
+          <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+        </amexio-chart-line>
+      </div>
+      <div class="col-lg-2">
+      </div>
     </div>
   </div>
 </div>
