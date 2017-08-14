@@ -1,43 +1,78 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-6">
-      <amexio-chart-column [data]="columnStackData" [isColumnStacked]="true"  [height]="400">
-        <amexio-chart-title [title]="'Motivation and Energy Level Throughout the Day'"></amexio-chart-title>
-        <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
-      </amexio-chart-column>
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>
+        Motivation and Energy Level Throughout the Day
+      </amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-column [data]="columnStackData" [isStacked]="true"  [height]="'500px'">
+          <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+        </amexio-chart-column>
+      </amexio-pane-body>
+    </amexio-card-pane>
     </div>
     <div class="col-lg-6">
-      <amexio-chart-bar [data]="barStackData" [isBarStacked]="true"  [height]="400">
-        <amexio-chart-title [title]="'Company Performance'"></amexio-chart-title>
+      <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+        <amexio-pane-header>
+          Company Performance
+        </amexio-pane-header>
+        <amexio-pane-body>
+      <amexio-chart-bar [data]="barStackData" [isStacked]="true"  [height]="'500px'">
         <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
       </amexio-chart-bar>
+        </amexio-pane-body>
+      </amexio-card-pane>
     </div>
   </div>
   <br><br>
   <div class="row">
     <div class="col-lg-6">
-      <amexio-chart-donut [data]="donutData">
+      <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+        <amexio-pane-header>
+          My Daily Activities
+        </amexio-pane-header>
+        <amexio-pane-body>
+      <amexio-chart-donut [data]="donutData" [height]="'500px'">
         <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
-        <amexio-chart-title [title]="'My Daily Activities'"></amexio-chart-title>
       </amexio-chart-donut>
+        </amexio-pane-body>
+      </amexio-card-pane>
     </div>
     <div class="col-lg-6">
-    <amexio-chart-area [data]="areaData" [height]="300" >
-      <amexio-chart-title [title]="'Company Performance'"></amexio-chart-title>
-      <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
-    </amexio-chart-area>
+      <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+        <amexio-pane-header>
+          Company Performance
+        </amexio-pane-header>
+        <amexio-pane-body>
+      <amexio-chart-area [data]="areaData" [height]="'500px'" >
+        <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+      </amexio-chart-area>
+        </amexio-pane-body>
+      </amexio-card-pane>
     </div>
-<br><br><br>
-    <div class="row">
-      <div class="col-lg-2">
-      </div>
-      <div class="col-lg-8">
-        <amexio-chart-line [data]="lineData" [height]="300" [width]="550">
-          <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
-        </amexio-chart-line>
-      </div>
-      <div class="col-lg-2">
-      </div>
+
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-lg-6">
+      <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+        <amexio-pane-header>Box Office Earnings in First Two Weeks of Opening</amexio-pane-header>
+        <amexio-pane-body>
+          <amexio-chart-line [data]="lineData" [height]="'400px'" [width]="'500px'">
+            <amexio-chart-legend [legendPosition]="'top'"></amexio-chart-legend>
+          </amexio-chart-line>
+        </amexio-pane-body>
+      </amexio-card-pane>.
+    </div>
+    <div class="col-lg-6" >
+      <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+        <amexio-pane-header>System Utilization</amexio-pane-header>
+        <amexio-pane-body>
+          <amexio-chart-gauge [data]="gaugeData"  [redColorFrom]="90" [redColorTo]="100" [yellowColorFrom]="75" [yellowColorTo]="90" [width]="'500px'">
+          </amexio-chart-gauge>
+        </amexio-pane-body>
+      </amexio-card-pane>
     </div>
   </div>
 </div>

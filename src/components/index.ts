@@ -56,6 +56,7 @@ import {GaugeChartComponent} from "./modules/charts/gaugechart/gauge.chart.compo
 import {GeoChartComponent} from "./modules/charts/geochart/geo.chart.component";
 import {HistogramChartComponent} from "./modules/charts/histogramchart/histogram.chart.component";
 import {ChartLoaderService} from "./modules/charts/chart.loader.service";
+import {TimeLineChartComponent} from "./modules/charts/timelinechart/timeline.chart.component";
 
 export * from './button/button.component';
 export * from './common.http.service';
@@ -129,6 +130,8 @@ export * from "./modules/charts/donutchart/donut.chart.component";
 export * from "./modules/charts/gaugechart/gauge.chart.component";
 export * from "./modules/charts/geochart/geo.chart.component";
 export * from "./modules/charts/histogramchart/histogram.chart.component";
+export * from "./modules/charts/timelinechart/timeline.chart.component";
+
 @NgModule({
   imports: [
     CommonModule,
@@ -188,7 +191,8 @@ export * from "./modules/charts/histogramchart/histogram.chart.component";
     DonutChartComponent,
     GaugeChartComponent,
     GeoChartComponent,
-    HistogramChartComponent
+    HistogramChartComponent,
+    TimeLineChartComponent
 
   ],
   exports: [
@@ -244,7 +248,8 @@ export * from "./modules/charts/histogramchart/histogram.chart.component";
     DonutChartComponent,
     GaugeChartComponent,
     GeoChartComponent,
-    HistogramChartComponent
+    HistogramChartComponent,
+    TimeLineChartComponent
   ]
 })
 export class AmexioWidgetModule {

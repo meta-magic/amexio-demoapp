@@ -14,7 +14,17 @@ export class DashboardComponent implements OnInit {
   columnStackData:any;
   donutData:any;
   areaData:any;
+  gaugeData:any;
   openIssuedata:any;
+  timelineData=[
+    [{"dataType":'string',"label":'Prime Minister'},
+      {"dataType":"date", "label":'Start'},
+      {"dataType":"date","label":"End"}
+    ],
+    [ 'Washington', new Date(1789, 3, 30), new Date(1797, 2, 4) ],
+    [ 'Adams',      new Date(1797, 2, 4),  new Date(1801, 2, 4) ],
+    [ 'Jefferson',  new Date(1801, 2, 4),  new Date(1809, 2, 4) ]];
+
   constructor() {
     this.barStackData=[
       ['Year', 'Sales', 'Expenses', 'Profit'],
@@ -73,6 +83,14 @@ export class DashboardComponent implements OnInit {
       ['2015',  660,       1120],
       ['2016',  1030,      540]
     ];
+    this.gaugeData=[
+      ['Label', 'Value'],
+      ['Memory', 80],
+      ['CPU', 55],
+      ['Network', 68]
+    ];
+
+
     this.openIssuedata={
       response:{
         data:[{
