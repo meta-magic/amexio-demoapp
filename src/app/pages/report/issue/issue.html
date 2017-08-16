@@ -1,4 +1,96 @@
 <div class="row">
+  <div class="col-lg-3">
+    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#4CAF50'" [fontColor]="'#ffffff'">
+      <amexio-west [contentalign]="'center'">
+        <i class="fa fa-check fa-3x"></i>
+      </amexio-west>
+      <amexio-center [contentalign]="'right'">
+        <amexio-datapoints [north]="true" [center]="true" [south]="true">
+          <amexio-north>
+            <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">212</span>
+          </amexio-north>
+          <amexio-center>
+            <span style="font-size: 20px">Closed</span>
+          </amexio-center>
+        </amexio-datapoints>
+      </amexio-center>
+    </amexio-datapoints>
+  </div>
+  <div class="col-lg-3">
+    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#FF9800'" [fontColor]="'#ffffff'">
+      <amexio-west [contentalign]="'center'">
+        <i class="fa fa-envelope-open-o fa-3x"></i>
+      </amexio-west>
+      <amexio-center [contentalign]="'right'">
+        <amexio-datapoints [north]="true" [center]="true" [south]="true">
+          <amexio-north>
+            <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">20</span>
+          </amexio-north>
+          <amexio-center>
+            <span style="font-size: 20px">Open</span>
+          </amexio-center>
+        </amexio-datapoints>
+      </amexio-center>
+    </amexio-datapoints>
+  </div>
+
+  <div class="col-lg-2">
+    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#68bafc'" [fontColor]="'#ffffff'">
+      <amexio-west [contentalign]="'center'">
+        <i class="fa fa-bolt fa-3x"></i>
+      </amexio-west>
+      <amexio-center [contentalign]="'right'">
+        <amexio-datapoints [north]="true" [center]="true" [south]="true">
+          <amexio-north>
+            <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">3</span>
+          </amexio-north>
+          <amexio-center>
+            <span style="font-size: 20px">High</span>
+          </amexio-center>
+        </amexio-datapoints>
+      </amexio-center>
+    </amexio-datapoints>
+  </div>
+
+  <div class="col-lg-2">
+    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#607D8B'" [fontColor]="'#ffffff'">
+      <amexio-west [contentalign]="'center'">
+        <i class="fa fa-medium fa-3x"></i>
+      </amexio-west>
+      <amexio-center [contentalign]="'right'">
+        <amexio-datapoints [north]="true" [center]="true" [south]="true">
+          <amexio-north>
+            <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">7</span>
+          </amexio-north>
+          <amexio-center>
+            <span style="font-size: 20px">Medium</span>
+          </amexio-center>
+        </amexio-datapoints>
+      </amexio-center>
+    </amexio-datapoints>
+  </div>
+
+  <div class="col-lg-2">
+    <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#00BCD4'" [fontColor]="'#ffffff'">
+      <amexio-west [contentalign]="'center'">
+        <i class="fa fa-low-vision fa-3x"></i>
+      </amexio-west>
+      <amexio-center [contentalign]="'right'">
+        <amexio-datapoints [north]="true" [center]="true" [south]="true">
+          <amexio-north>
+            <span style="color: #ffffff; font-size: 36px; font-weight: bold; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);">10</span>
+          </amexio-north>
+          <amexio-center>
+            <span style="font-size: 20px">Low</span>
+          </amexio-center>
+        </amexio-datapoints>
+      </amexio-center>
+    </amexio-datapoints>
+  </div>
+
+</div>
+<br/>
+<div class="row">
   <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
     <amexio-pane-body>
       <amexio-data-table
