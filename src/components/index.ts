@@ -58,6 +58,12 @@ import {HistogramChartComponent} from "./modules/charts/histogramchart/histogram
 import {ChartLoaderService} from "./modules/charts/chart.loader.service";
 import {TimeLineChartComponent} from "./modules/charts/timelinechart/timeline.chart.component";
 import {NotifyComponent} from "./notify/notify.component";
+import {DataPointsComponent} from "./datapoints/datapoints.component";
+import {DataPointSouthComponent} from "./datapoints/south.component";
+import {DataPointNorthComponent} from "./datapoints/north.component";
+import {DataPointCenterComponent} from "./datapoints/center.component";
+import {DataPointEastComponent} from "./datapoints/east.component";
+import {DataPointWestComponent} from "./datapoints/west.component";
 
 export * from './button/button.component';
 export * from './common.http.service';
@@ -194,7 +200,13 @@ export * from "./modules/charts/timelinechart/timeline.chart.component";
     GaugeChartComponent,
     GeoChartComponent,
     HistogramChartComponent,
-    TimeLineChartComponent
+    TimeLineChartComponent,
+    DataPointsComponent,
+    DataPointSouthComponent,
+    DataPointNorthComponent,
+    DataPointCenterComponent,
+    DataPointEastComponent,
+    DataPointWestComponent
 
   ],
   exports: [
@@ -251,7 +263,13 @@ export * from "./modules/charts/timelinechart/timeline.chart.component";
     GaugeChartComponent,
     GeoChartComponent,
     HistogramChartComponent,
-    TimeLineChartComponent
+    TimeLineChartComponent,
+    DataPointsComponent,
+    DataPointSouthComponent,
+    DataPointNorthComponent,
+    DataPointCenterComponent,
+    DataPointEastComponent,
+    DataPointWestComponent
   ]
 })
 export class AmexioWidgetModule {

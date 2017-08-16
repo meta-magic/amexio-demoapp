@@ -18,6 +18,7 @@
   {
     "text": "Pages",
     "icon" : "fa fa-id-card-o fa-fw",
+    "expand":true,
     "childrens": [
       {
         "text": "Login",
@@ -39,6 +40,7 @@
     {
       "text": "Reports",
       "icon" : "fa fa-picture-o fa-fw",
+      "expand":true,
       "childrens": [
         {
           "text": "Issue",
