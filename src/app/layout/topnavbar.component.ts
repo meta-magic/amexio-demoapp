@@ -14,6 +14,7 @@ export class TopNavBarComponent {
   httpResponse : any;
 
   menuData : any[] = [];
+  data : any=[];
 
   constructor(public _http : Http){
     this._http.get('assets/data/menus/topmenu.json').subscribe(
@@ -27,5 +28,12 @@ export class TopNavBarComponent {
         this.menuData = this.httpResponse.menus;
       }
     );
+  }
+
+  onClick(menuItem:any){
+
+    if(menuItem.menuId && menuItem.menuId==2){
+      this.data.push({'msg':'You have new email', 'type' : 'info'});
+    }
   }
 }

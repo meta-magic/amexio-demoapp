@@ -75,14 +75,35 @@
     </amexio-card-pane>
   </div>
 </div>
+<br/>
 <div class="row">
   <div class="col-lg-12">
     <amexio-card-pane [enableFooter]="false">
       <amexio-pane-header>
-        Activity
+        Contacts
       </amexio-pane-header>
       <amexio-pane-body>
-      2017:
+
+        <amexio-listbox [data]="bindData" [filter]="true"
+                        [enableCheckbox] = "false" [dataReader]="'response.data'"
+                        [displayField]="'name'">
+          <ng-template #amexioBodyTmpl let-row="row">
+            <table>
+              <tr>
+                <td>
+                  <img class="rounded-circle" width="70" src="assets/images/profile/{{row.profile}}"/>
+                </td>
+                <td style="padding: 10px; vertical-align: top;">
+                  <b>{{row.name}}</b>
+                  <br>
+                  <p>{{row.email}}</p>
+                </td>
+              </tr>
+            </table>
+          </ng-template>
+        </amexio-listbox>
+
+
       </amexio-pane-body>
     </amexio-card-pane>
   </div>

@@ -13,8 +13,13 @@
       <ng-container *ngFor="let menuItem of menuData">
         <a class="nav-item nav-link active" [attr.href]="menuItem.link" [target]="menuItem.label == 'Home' ? '' : '_blank'">{{menuItem.label}}</a>
 
-        <i [class]="menuItem.icon" style="padding-top:12px;" aria-hidden="true"></i>
+        <a style="cursor: pointer;" (click)="onClick(menuItem);"><i [class]="menuItem.icon" style="padding-top:12px;" aria-hidden="true"></i></a>
       </ng-container>
     </div>
   </div>
+  <div style="margin-top: 20px;">
+    <amexio-notification [messageData]="data"></amexio-notification>
+  </div>
+
 </nav>
+

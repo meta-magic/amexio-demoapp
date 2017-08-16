@@ -57,6 +57,7 @@ import {GeoChartComponent} from "./modules/charts/geochart/geo.chart.component";
 import {HistogramChartComponent} from "./modules/charts/histogramchart/histogram.chart.component";
 import {ChartLoaderService} from "./modules/charts/chart.loader.service";
 import {TimeLineChartComponent} from "./modules/charts/timelinechart/timeline.chart.component";
+import {NotifyComponent} from "./notify/notify.component";
 
 export * from './button/button.component';
 export * from './common.http.service';
@@ -179,6 +180,7 @@ export * from "./modules/charts/timelinechart/timeline.chart.component";
     DialogComponent,
     CardComponent,
       ListBoxComponent,
+    NotifyComponent,
     //for charts
     ChartLegendComponent,
     ChartTitleComponent,
@@ -236,7 +238,7 @@ export * from "./modules/charts/timelinechart/timeline.chart.component";
     DialogComponent,
     CardComponent,
       ListBoxComponent,
-
+    NotifyComponent,
     ChartLegendComponent,
     ChartTitleComponent,
     ChartAreaComponent,
