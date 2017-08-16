@@ -6,8 +6,8 @@
       </amexio-pane-header>
       <amexio-pane-body>
         <div class="row">
-          <div class="col-lg-3">
-            <div style="text-align: center">
+          <div class="col-lg-2">
+            <div style="text-align: left">
               <amexio-btn [label]="'Compose'" [type]="'danger'" [size]="'small'"[tooltipMessage]="'Compose'" (click)="toggle()"></amexio-btn>
             </div>
             <br>
@@ -20,7 +20,7 @@
             </amexio-tree-view>
           </div>
           <br>
-          <div class="col-lg-9">
+          <div class="col-lg-10">
             <amexio-data-table
               [title]="'Inbox'"
               [pageSize] = "10"
@@ -30,9 +30,9 @@
               [httpMethod]="'get'"
               (selectedRowData)="onRowSelect($event)"
               (rowSelect)="onRowClick($event)">
+              <amexio-data-table-column [dataIndex]="'date'" [dataType]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
               <amexio-data-table-column [dataIndex]="'from'" [dataType]="'string'" [hidden]="false" [text]="'From'"></amexio-data-table-column>
               <amexio-data-table-column [dataIndex]="'title'" [dataType]="'string'" [hidden]="false" [text]="'Title'"></amexio-data-table-column>
-              <amexio-data-table-column [dataIndex]="'date'" [dataType]="'string'" [hidden]="false" [text]="'Date'"></amexio-data-table-column>
             </amexio-data-table>
           </div>
         </div>
