@@ -22,7 +22,7 @@
     "childrens": [
       {
         "text": "Sample",
-        "icon" : "fa fa-sign-in fa-fw",
+        "icon" : "fa fa-laptop fa-fw",
         "routerLink":"/home/sample"
       },
       {
