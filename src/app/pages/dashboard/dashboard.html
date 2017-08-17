@@ -121,7 +121,7 @@
         </amexio-pane-body>
       </amexio-card-pane>.
     </div>
-    <div class="d-flex justify-content-center col-lg-6 " >
+    <div *ngIf="!smallScreen" class="d-flex justify-content-center col-lg-6 " >
       <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
         <amexio-pane-header>System Utilization</amexio-pane-header>
         <amexio-pane-body>

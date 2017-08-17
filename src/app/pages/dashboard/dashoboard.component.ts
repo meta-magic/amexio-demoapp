@@ -15,6 +15,7 @@ export class DashboardComponent implements OnInit {
   donutData:any;
   areaData:any;
   gaugeData:any;
+  smallScreen:boolean=false;
   openIssuedata:any;
   timelineData=[
     [{"dataType":'string',"label":'Prime Minister'},
@@ -113,5 +114,9 @@ export class DashboardComponent implements OnInit {
   onRowClick(event:any){
 
   }
-  ngOnInit() { }
+  ngOnInit() {
+    if(window.innerWidth<768){
+      this.smallScreen=true;
+    }
+  }
 }
