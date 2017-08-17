@@ -279,7 +279,6 @@ export class TreeDataTableComponent implements  OnInit, AfterContentInit{
                 let sortColDataIndex = dataIndex;
                 if (this.sortColumn.dataType == 'string'){
                     this.data.sort((a : any, b : any) => {
-                        debugger;
                         let x = a[sortColDataIndex].toLowerCase();
                         let y = b[sortColDataIndex].toLowerCase();
                         if (x < y) {return -1; }

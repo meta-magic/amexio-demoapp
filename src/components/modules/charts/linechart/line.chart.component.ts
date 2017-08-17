@@ -99,7 +99,6 @@ export class LineChartComponent implements AfterContentInit,OnInit {
         width:this.chartAreaComponent.chartWidthInPer?this.chartAreaComponent.chartWidthInPer:null
       }:null,
     };
-    debugger;
     this.chart = new google.visualization.LineChart(document.getElementById(this.id));
     this.chart.draw(this.lineData, this.options);
     google.visualization.events.addListener(this.chart, 'click', this.onClick);
