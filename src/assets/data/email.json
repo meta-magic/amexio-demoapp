@@ -86,6 +86,30 @@
         "from": "Anagha Kulkarni",
         "title": "Spring + Mongo DB",
         "date": "13-07-2017"
+      },{
+        "from": "Araf Karsh Hamid",
+        "title": "Flux / Redux Architecture - Kreative Kanvas",
+        "date": "11-07-2017"
+      },{
+        "from": "Ketan Gote",
+        "title": "Desire Platform GIT repos",
+        "date": "11-07-2017"
+      },{
+        "from": "Pratik Kelwalkar",
+        "title": "mobile.twitter.com PWA from React to Angular/Ionic",
+        "date": "10-07-2017"
+      },{
+        "from": "Ketan Gote",
+        "title": "Messages in Platform",
+        "date": "10-07-2017"
+      },{
+        "from": "Araf Karsh Hamid",
+        "title": "TypeScript - Angular's Secret Weapon...",
+        "date": "09-07-2017"
+      },{
+        "from": "Araf Karsh Hamid",
+        "title": "Visual Studio Code - Plugin for Amexio",
+        "date": "09-07-2017"
       }
     ]
   }

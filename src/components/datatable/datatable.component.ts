@@ -62,7 +62,7 @@ declare var $;
             <i class="fa fa-bars"></i> Page - {{currentPage}}
             </button>
             <div class="dropdown-menu dropdown-menu-right amexio-datatable-dropdown-action">
-              <li *ngFor="let row of pageNumbers let pageNo = index " class="dropdown-item" value="{{pageNo+1}}"><a (click)="setPageNo(pageNo+1)">{{pageNo+1}}</a></li>
+              <li *ngFor="let row of pageNumbers let pageNo = index " class="dropdown-item" value="{{pageNo+1}}" (click)="setPageNo(pageNo+1)"><a >{{pageNo+1}}</a></li>
             </div>
           </div>
           <div class="input-group-btn">
