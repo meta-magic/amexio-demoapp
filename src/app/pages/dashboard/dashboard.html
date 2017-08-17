@@ -89,7 +89,7 @@
           My Daily Activities
         </amexio-pane-header>
         <amexio-pane-body>
-      <amexio-chart-donut [data]="donutData" [height]="'500px'">
+      <amexio-chart-donut [data]="donutData">
         <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
       </amexio-chart-donut>
         </amexio-pane-body>
@@ -101,7 +101,7 @@
           Company Performance
         </amexio-pane-header>
         <amexio-pane-body>
-      <amexio-chart-area [data]="areaData" [height]="'500px'" >
+      <amexio-chart-area [data]="areaData">
         <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
       </amexio-chart-area>
         </amexio-pane-body>
@@ -115,7 +115,7 @@
       <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
         <amexio-pane-header>Box Office Earnings in First Two Weeks of Opening</amexio-pane-header>
         <amexio-pane-body>
-          <amexio-chart-line [data]="lineData" [height]="'400px'" [width]="'500px'">
+          <amexio-chart-line [data]="lineData">
             <amexio-chart-legend [legendPosition]="'top'"></amexio-chart-legend>
           </amexio-chart-line>
         </amexio-pane-body>
