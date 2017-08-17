@@ -112,7 +112,6 @@ export class PieChartComponent implements AfterContentInit,OnInit {
   }
 
   onClick(e) {
-    debugger
   }
 
   //after content init for inner directive is run

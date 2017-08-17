@@ -39,7 +39,7 @@
       <amexio-pane-body>
         <div>
           <p>
-          Demo app focuses on the showcase of Amexio UI Components and Features. Here we have created simple app with different pages which is using 52 different amexio components and 9 charts components
+          Demo app focuses on the showcase of Amexio UI Components and Features. Here we have created simple app with different pages which is using 54 different amexio components,9 charts, 2 dashboards and 1 map
           based on Angular4 and Bootstrap4.
           </p>
         </div>
@@ -59,13 +59,19 @@
             </li>
             <li>There are two reports which uses datagrid features like filtering and grouping.</li>
             <li>
-              Demo App source code is available on GIT public repository.
+              Demo App <a style="color: blue" [attr.href]="'https://github.com/meta-magic/amexio-demoapp.git'"
+                          [target]="'_blank'"> Git Source Code </a>  is available on GIT public repository.
             </li>
           </ul>
         </div>
+        <div class="d-flex justify-content-center row" >
+          <amexio-btn  [type]="'primary'" [label]="'Let\'s start the demo!'" (onClick)="routeDemo()" ></amexio-btn>
+        </div>
       </amexio-pane-body>
     </amexio-card-pane>
+
   </div>
 </div>
+
 
 

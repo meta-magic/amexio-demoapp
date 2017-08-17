@@ -38,8 +38,8 @@ export class LandingPageComponent implements OnInit {
      }
    );
  }
-  onMenuClick(menuItem:any){
-  debugger
+  routeDemo(menuItem:any){
+    this._router.navigate(['/home']);
   }
  ngOnInit() { }
 
