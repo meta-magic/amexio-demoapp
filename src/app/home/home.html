@@ -31,7 +31,7 @@
             [width]="'90%'"
             [httpUrl]="'assets/data/menus/sidebar.json'"
             [httpMethod]="'get'"
-            [dataReader]="'data'" [toPosition]="60" [expanded]="false"
+            [dataReader]="'data'" [toPosition]="75" [expanded]="false"
             (selectedNode)="routeToLink($event)">
             <ng-template #amexioNavHeaderTmpl  let-navHeader="navHeader">
               &nbsp;<i [attr.class]="navHeader.icon"></i>&nbsp;<b>{{navHeader.text}}</b>

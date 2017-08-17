@@ -1,6 +1,5 @@
-<div>
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-sm-12">
       <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#efa64c'" [fontColor]="'#ffffff'">
         <amexio-west [contentalign]="'center'" [width]="'100px'">
           <i class="fa fa-line-chart fa-3x"></i>
@@ -18,7 +17,7 @@
         <amexio-south [contentalign]="'center'" [backgroundColor]="'#d97c3e'">10% More than last year</amexio-south>
       </amexio-datapoints>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-sm-12">
       <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#68bafc'" [fontColor]="'#ffffff'">
         <amexio-west [contentalign]="'center'" [width]="'100px'">
           <i class="fa fa-line-chart fa-3x"></i>
@@ -36,7 +35,7 @@
         <amexio-south [contentalign]="'center'" [backgroundColor]="'#3192e1'">5% more than last year</amexio-south>
       </amexio-datapoints>
     </div>
-    <div class="col-lg-4">
+    <div class="col-lg-4 col-sm-12">
       <amexio-datapoints [west]="true" [center]="true" [east]="true" [south]="true" [backgroundColor]="'#f97bb2'" [fontColor]="'#ffffff'">
         <amexio-west [contentalign]="'center'" [width]="'100px'">
           <i class="fa fa-line-chart fa-3x"></i>
@@ -55,27 +54,27 @@
       </amexio-datapoints>
     </div>
   </div>
-  <br/>
+  <br>
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-sm-12">
     <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
       <amexio-pane-header>
         Motivation and Energy Level Throughout the Day
       </amexio-pane-header>
       <amexio-pane-body>
-        <amexio-chart-column [data]="columnStackData" [isStacked]="true"  [height]="'500px'">
+        <amexio-chart-column [data]="columnStackData" [isStacked]="true" >
           <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
         </amexio-chart-column>
       </amexio-pane-body>
     </amexio-card-pane>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-sm-12">
       <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
         <amexio-pane-header>
           Company Performance
         </amexio-pane-header>
         <amexio-pane-body>
-      <amexio-chart-bar [data]="barStackData" [isStacked]="true"  [height]="'500px'">
+      <amexio-chart-bar [data]="barStackData" [isStacked]="true" >
         <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
       </amexio-chart-bar>
         </amexio-pane-body>
@@ -84,7 +83,7 @@
   </div>
   <br><br>
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-sm-12">
       <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
         <amexio-pane-header>
           My Daily Activities
@@ -96,7 +95,7 @@
         </amexio-pane-body>
       </amexio-card-pane>
     </div>
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-sm-12">
       <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
         <amexio-pane-header>
           Company Performance
@@ -112,7 +111,7 @@
   </div>
   <br><br>
   <div class="row">
-    <div class="col-lg-6">
+    <div class="col-lg-6 col-sm-12">
       <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
         <amexio-pane-header>Box Office Earnings in First Two Weeks of Opening</amexio-pane-header>
         <amexio-pane-body>
@@ -122,7 +121,7 @@
         </amexio-pane-body>
       </amexio-card-pane>.
     </div>
-    <div class="col-lg-6" >
+    <div class="d-flex justify-content-center col-lg-6 " >
       <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
         <amexio-pane-header>System Utilization</amexio-pane-header>
         <amexio-pane-body>
@@ -132,4 +131,3 @@
       </amexio-card-pane>
     </div>
   </div>
-</div>

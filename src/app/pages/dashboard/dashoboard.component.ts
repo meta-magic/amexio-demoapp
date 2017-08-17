@@ -85,9 +85,7 @@ export class DashboardComponent implements OnInit {
     ];
     this.gaugeData=[
       ['Label', 'Value'],
-      ['Memory', 80],
-      ['CPU', 55],
-      ['Network', 68]
+      ['Memory', 80]
     ];
 
 
