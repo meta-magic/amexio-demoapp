@@ -38,10 +38,13 @@ export const BASE_IMPL_AUTO_COMPLETE : any = {
   template : `    
     <div class="dropdown" data-toggle="dropdown" [ngClass]="{'show': showDropDown}">
       <div class="row">
-        <label [attr.for]="elementId">{{fieldLabel}}</label>
-        <input type="search" class="form-control" [attr.aria-expanded]="showDropDown" 
-               [attr.id]="elementId"  (keyup)="onKeyUp($event)"
-               (blur)="onBlur()"  [(ngModel)]="value" #inp>
+        <div class="col-lg-12">
+          <label [attr.for]="elementId">{{fieldLabel}}</label>
+          <input type="search" class="form-control" [attr.aria-expanded]="showDropDown"
+                 [attr.id]="elementId"  (keyup)="onKeyUp($event)"
+                 (blur)="onBlur()"  [(ngModel)]="value" #inp>
+        </div>
+      
 <!--        <span [ngClass]="{'showIcon' : showDropDown,'hideIcon' : !showDropDown}" (click)="clearResult(inp)" class="glyphicon glyphicon-remove-circle searchIconPos"></span>-->
       </div>
      

@@ -56,13 +56,12 @@
           <amexio-tab title="Address" [icon]="'fa fa-address-card'">
             <div class="row">
               <div class="col-lg-4">
-                <label>Country</label>
                 <amexio-dropdown
                   [(ngModel)]="countryName"
-                  [placeholder]="'Choose'"
+                  [placeholder]="'Choose country'"
                   name="countryName"
                   [dataReader]="'response.data'"
-                  [fieldLabel]="'Choose country'"
+                  [fieldLabel]="'Country'"
                   [httpUrl]="'assets/data/country.json'"
                   [httpMethod]="'get'"
                   [displayField]="'countryName'"
@@ -72,13 +71,12 @@
                 </amexio-dropdown>
               </div>
               <div class="col-lg-4">
-                <label>State</label>
                 <amexio-dropdown
                   [(ngModel)]="stateName"
-                  [placeholder]="'Choose'"
+                  [placeholder]="'Choose state'"
                   name="stateName"
                   [dataReader]="'response.data'"
-                  [fieldLabel]="'Choose state'"
+                  [fieldLabel]="'State'"
                   [httpUrl]="'assets/data/state.json'"
                   [httpMethod]="'get'"
                   [displayField]="'stateName'"
@@ -88,13 +86,12 @@
                 </amexio-dropdown>
               </div>
               <div class="col-lg-4">
-                <label>City</label>
                 <amexio-dropdown
                   [(ngModel)]="cityName"
-                  [placeholder]="'Choose'"
+                  [placeholder]="'Choose city'"
                   name="cityName"
                   [dataReader]="'response.data'"
-                  [fieldLabel]="'Choose city'"
+                  [fieldLabel]="'City'"
                   [httpUrl]="'assets/data/city.json'"
                   [httpMethod]="'get'"
                   [displayField]="'cityName'"
