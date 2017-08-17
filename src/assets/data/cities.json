@@ -1,0 +1,30 @@
+{
+  "response": {
+    "success": true,
+    "message": "Fetching  Data  Request Succeeded: City",
+    "data": [
+      {
+        "cityName": "Alabama",
+        "cityCode1": "NY"
+      },{
+        "cityName": "California",
+        "cityCode1": "NY"
+      },{
+        "cityName": "Florida",
+        "cityCode1": "NY"
+      },{
+        "cityName": "Georgia",
+        "cityCode1": "NY"
+      },{
+        "cityName": "New York",
+        "cityCode1": "NY"
+      },{
+        "cityName":"Texas",
+        "cityCode":"te"
+      },{
+        "cityName":"Washington",
+        "cityCode":"wa"
+      }
+    ]
+  }
+}

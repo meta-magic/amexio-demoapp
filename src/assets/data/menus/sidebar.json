@@ -21,6 +21,11 @@
     "expand":true,
     "childrens": [
       {
+        "text": "Sample",
+        "icon" : "fa fa-sign-in fa-fw",
+        "routerLink":"/home/sample"
+      },
+      {
         "text": "Login",
         "icon" : "fa fa-sign-in fa-fw",
         "routerLink":"/home/login"

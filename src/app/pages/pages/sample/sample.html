@@ -1,0 +1,122 @@
+<amexio-card-pane>
+  <amexio-pane-header>
+    Sample Form
+  </amexio-pane-header>
+  <amexio-pane-body>
+    <div class="row">
+      <div class="col-lg-6">
+        <amexio-text-input [fieldLabel]="'Name'" name ="name"
+                           [placeholder]="'Enter name'"
+                           [allowBlank]="true" [errorMsg] ="'Please enter name'"
+                           [iconFeedBack]="true">
+        </amexio-text-input>
+      </div>
+      <div class="col-lg-6">
+        <amexio-textarea-input [fieldLabel]="'Address'" name ="Address"
+                               [placeholder]="'Enter Address'"
+                               [allowBlank]="true" [errorMsg] ="'Please enter Address'"
+                               [iconFeedBack]="true" [noOfrows]="'2'" [noOfCols]="'2'"
+                               [popoverPlacement]="'top'" >
+        </amexio-textarea-input>
+      </div>
+      <div class="col-lg-6">
+        <amexio-dropdown
+
+                         [(ngModel)]="country"
+                         [placeholder]="'Choose City'"
+                         name="country"
+                         [dataReader]="'response.data'"
+                         [fieldLabel]="'City'"
+                         [httpUrl]="'assets/data/cities.json'"
+                         [httpMethod]="'get'"
+                         [searchBox]="'true'"
+                         [displayField]="'cityName'"
+                         [valueField]="'cityName'"
+                         [width]="'100%'">
+        </amexio-dropdown>
+      </div>
+      <div class="col-lg-6">
+        <amexio-password-input [fieldLabel]="'Password Input'" name ="password"
+                               [placeholder]="'Enter Password'"
+                               [allowBlank]="false"
+                               [errorMsg] ="'Please enter password'"
+                               [minLength]="6"
+                               [minErrorMsg]="'Minimum 6 char required'"
+                               [maxLength]="32"
+                               [maxErrorMsg]="'Maximum 32 char allowed'"
+                               [iconFeedBack]="true"
+                               [popoverPlacement]="'top'">
+        </amexio-password-input>
+      </div>
+      <div class="col-lg-6">
+        <amexio-email-input [fieldLabel]="'Email Id'" name ="email"
+                            [placeholder]="'Enter Email Id'"
+                            [allowBlank]="false" [errorMsg] ="'Please enter Email Id'"
+                            [iconFeedBack]="true">
+        </amexio-email-input>
+      </div>
+      <div class="col-lg-6">
+        <amexio-number-input [fieldLabel]="'Number Input'" name ="age"
+                             [placeholder]="'Enter Age'">
+        </amexio-number-input>
+      </div>
+      <div class="col-lg-6">
+        <label>Date of birth</label>
+        <amexio-date-time-picker
+          [timepicker]="false"
+          [datepicker]="datepickerOpts"
+          [(ngModel)]="currentDate">
+        </amexio-date-time-picker>
+
+      </div>
+      <div class="col-lg-6">
+        <amexio-typeahead [dataReader]="'response.data'"
+                          [httpUrl]="'assets/data/country.json'"
+                          [httpMethod]="'get'"
+                          [key]="'countryName'"
+                          [fieldLabel]="'Country Name'">
+        </amexio-typeahead>
+        <br>
+      </div>
+
+      <div class="col-lg-6">
+        <amexio-checkbox [fieldLabel]="'Languages'" name ="language"
+                         [dataReader]="'response.data'"
+                         [displayField]="'language'"
+                         [valueField]="'checked'"
+                         [checkBoxGroupDownBindData]="checkboxGroupdata">
+        </amexio-checkbox>
+      </div>
+      <div class="col-lg-6">
+        <amexio-radio-group [fieldLabel]="'Horizontal RadioGroup'" name ="gender"
+                            [fieldName]="'genderDemo'"
+                            [dataReader]="'response.data'"
+                            [displayField]="'gender'"
+                            [valueField]="'genderId'"
+                            [radioGroupBindData]="radioGroupData"
+                            [column]="'3'">
+        </amexio-radio-group>
+      </div>
+
+      <div class="col-lg-12">
+        <br>
+        <amexio-item-selector [height]="200" [displayField]="'countryName'"
+                              [valueField]="'countryId'"
+                              [httpUrl]="'assets/data/selectordata.json'"
+                              [httpMethod]="'get'" [dataReader]="'response.data'" >
+        </amexio-item-selector>
+      </div>
+    </div>
+  </amexio-pane-body>
+
+  <amexio-pane-action>
+    <div style="float: right">
+      <amexio-btn-group>
+      <amexio-btn-group-action [label]="'Save'"  [type]="'primary'"  ></amexio-btn-group-action>
+      <amexio-btn-group-action [label]="'Update'" [type]="'success'" ></amexio-btn-group-action>
+      <amexio-btn-group-action [label]="'Delete'" [type]="'danger'" ></amexio-btn-group-action>
+      <amexio-btn-group-action [label]="'Cancel'" [type]="'warning'" ></amexio-btn-group-action>
+      </amexio-btn-group>
+    </div>
+  </amexio-pane-action>
+</amexio-card-pane>
