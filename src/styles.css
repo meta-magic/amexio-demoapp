@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+
+.amexio-sidenavbar-sidenavleft  {
+  background-color: #424242 !important;
+  color: white;
+}
+
+
+.amexio-sidenavbar-sidenavleft >ul >li {
+  border-bottom: 1px solid #616161 !important;
+}
+
+.card-header {
+  padding: .45rem 1.25rem;
+  margin-bottom: 0;
+  background-color: #f7f7f9;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-footer {
+  padding: .45rem 1.25rem;
+  background-color: #f7f7f9;
+  border-top: 1px solid rgba(0,0,0,.125);
+}

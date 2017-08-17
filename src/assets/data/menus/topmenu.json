@@ -2,16 +2,16 @@
   "menus" : [
     {
       "label" : "",
-      "icon":"fa fa-home fa-fw fa-lg",
+      "icon":"fa fa-home fa-fw fa-lg fa-2x",
       "menuId":"1"
     },
     {
       "label" : "",
-      "icon":"fa fa-bell fa-fw fa-lg",
+      "icon":"fa fa-bell fa-fw fa-lg  fa-2x ",
       "menuId":"2"
     },{
       "label" : "John Doe",
-      "icon":"fa fa-user-circle fa-fw fa-lg",
+      "icon":"fa fa-user-circle fa-fw fa-lg  fa-2x",
       "menuId":"3"
     }
   ]
