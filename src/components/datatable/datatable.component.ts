@@ -88,7 +88,6 @@ declare var $;
             <tr *ngIf="smallScreen">
               <td [attr.colspan]="columns.length+1">
               <ng-container *ngIf="groupByColumn">
-                <div style="float: right">
                   <amexio-dropdown [(ngModel)]="groupByColumnIndex"
                                    [placeholder]="'Choose Column'"
                                    name="groupByColumnIndex"
@@ -98,8 +97,6 @@ declare var $;
                                    [valueField]="'dataIndex'"
                                    (onSingleSelect)="setColumnData()">
                   </amexio-dropdown>
-                </div>
-                
               </ng-container>
               </td>
             </tr>
