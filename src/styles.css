@@ -39,3 +39,15 @@
   border-radius: .0rem;
   box-shadow: 5px 5px 5px #888888;
 }
+
+
+.amexio-sidenavbar-nav-link-a:hover{
+  background-color: #616161;
+  color:#424242
+}
+
+
+.a-link:hover{
+  background-color: #616161;
+  color:#424242
+}
