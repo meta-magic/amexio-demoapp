@@ -121,12 +121,13 @@
         </amexio-pane-body>
       </amexio-card-pane>.
     </div>
-    <div *ngIf="!smallScreen" class="d-flex justify-content-center col-lg-6 " >
+    <div class="col-lg-6 col-sm-12">
       <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
-        <amexio-pane-header>System Utilization</amexio-pane-header>
+        <amexio-pane-header>Daily Activities</amexio-pane-header>
         <amexio-pane-body>
-          <amexio-chart-gauge [data]="gaugeData"  [redColorFrom]="90" [redColorTo]="100" [yellowColorFrom]="75" [yellowColorTo]="90" [width]="'500px'">
-          </amexio-chart-gauge>
+          <amexio-chart-pie [data]="pieChartData" [is3D]="true">
+            <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+          </amexio-chart-pie>
         </amexio-pane-body>
       </amexio-card-pane>
     </div>

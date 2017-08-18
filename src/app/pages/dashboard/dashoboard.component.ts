@@ -13,6 +13,7 @@ export class DashboardComponent implements OnInit {
   lineData:any;
   columnStackData:any;
   donutData:any;
+  pieChartData:any;
   areaData:any;
   gaugeData:any;
   smallScreen:boolean=false;
@@ -89,8 +90,14 @@ export class DashboardComponent implements OnInit {
       ['Memory', 80],
       ['CPU', 55]
     ];
-
-
+    this.pieChartData=[
+      ['Task', 'Hours per Day'],
+      ['Work',     11],
+      ['Eat',      2],
+      ['Commute',  2],
+      ['Watch TV', 2],
+      ['Sleep',    7]
+    ];
     this.openIssuedata={
       response:{
         data:[{
