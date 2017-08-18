@@ -36,6 +36,33 @@ import {
       </tr>
     </table>
     </div>
+    <div style="padding: 5px;">
+      <table width="100%"  [style.background-color]="backgroundColor" [style.color]="fontColor">
+        <tr *ngIf="north">
+          <td [attr.colspan]="colspan">
+            <ng-content select="amexio-north"></ng-content>
+          </td>
+        </tr>
+        <tr>
+          <td *ngIf="west">
+            <ng-content select="amexio-west"></ng-content>
+          </td>
+          <td *ngIf="center">
+            <ng-content select="amexio-center"></ng-content>
+          </td>
+          <td *ngIf="east">
+            <ng-content select="amexio-east"></ng-content>
+          </td>
+        </tr>
+        <tr  *ngIf="south">
+          <td [attr.colspan]="colspan">
+            <ng-content select="amexio-south"></ng-content>
+          </td>
+        </tr>
+      </table>
+    </div>
+
+
 
   `
 })
