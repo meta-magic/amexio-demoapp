@@ -19,13 +19,14 @@ export class HomeComponent implements OnInit{
   reAdjust(){
     this.deviceHeight = $(window).height();
     this.deviceWidth = $(window).width();
-    if(this.deviceWidth < 768){
+    if(this.deviceWidth < 995){
       this.isMobile = true;
     }
   }
   onResize(event:any){
+
     this.reAdjust();
-    if (event.target.innerWidth < 768) {
+    if (event.target.innerWidth < 995) {
       this.isMobile = true;
     } else {
       this.isMobile = false;
