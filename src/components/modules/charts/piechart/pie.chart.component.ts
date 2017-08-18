@@ -18,10 +18,11 @@ import {ChartAreaComponent} from "../chartarea/chart.area.component";
 declare var google: any;
 @Component({
   selector: 'amexio-chart-pie', template: `
+    
         <div [attr.id]="id"
              [style.width]="width"
              [style.height]="height"
-        ></div>
+             (window:resize)="onResize($event)"></div>
   `
 })
 export class PieChartComponent implements AfterContentInit,OnInit {
@@ -130,10 +131,19 @@ export class PieChartComponent implements AfterContentInit,OnInit {
       this.chartAreaComponent=this.chartAreaArray.pop();
     }
   }
+
+
   ngOnInit(): void {
-    //call draw chart method
+    this.createChart();
+  }
+
+  createChart(){
     google.charts.load('current', {packages: ['corechart']});
     google.charts.setOnLoadCallback(() => this.drawChart());
+  }
+
+  onResize(event){
+    this.createChart();
   }
 }
 

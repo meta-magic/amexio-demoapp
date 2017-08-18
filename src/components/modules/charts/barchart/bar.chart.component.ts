@@ -22,7 +22,7 @@ declare var google;
     template: `
         <div [attr.id]="id"
              [style.width]="width"
-             [style.height]="height">
+             [style.height]="height"  (window:resize)="onResize($event)">
         </div>
     `
 })
@@ -136,8 +136,16 @@ export class BarChartComponent implements AfterContentInit,OnInit{
         }
     }
     ngOnInit(): void {
-        //call draw chart method
-        google.charts.load('current', {packages: ['corechart', 'bar']});
-        google.charts.setOnLoadCallback(() => this.drawChart());
+      this.createChart();
     }
+
+    createChart(){
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+      google.charts.setOnLoadCallback(() => this.drawChart());
+    }
+
+    onResize(event){
+      this.createChart();
+    }
+
 }

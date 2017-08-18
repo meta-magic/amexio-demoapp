@@ -12,10 +12,10 @@
           &nbsp;<i [attr.class]="navHeader.icon"></i>&nbsp;<b>{{navHeader.text}}</b>
         </ng-template>
         <ng-template #amexioMenuHeaderTmpl let-menuHeader="menuHeader">
-          <i [attr.class]="menuHeader.icon"></i>&nbsp;{{menuHeader.text}}
+          <i [attr.class]="menuHeader.icon"></i>&nbsp;<a class="a-link">{{menuHeader.text}}</a>
         </ng-template>
         <ng-template #amexioSubMenuTmpl let-subMenus="subMenus">
-          <i [attr.class]="subMenus.icon"></i>&nbsp;{{subMenus.text}}
+          <i [attr.class]="subMenus.icon"></i>&nbsp;<a class="a-link">{{subMenus.text}}</a>
         </ng-template>
       </amexio-sidemenubar>
     </div>

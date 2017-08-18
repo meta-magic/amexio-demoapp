@@ -22,7 +22,7 @@ declare var google: any;
         <div [attr.id]="id"
              [style.width]="width"
              [style.height]="height"
-        ></div>
+             (window:resize)="onResize($event)" ></div>
   `
 })
 
@@ -122,9 +122,17 @@ export class DonutChartComponent  implements AfterContentInit {
       this.chartAreaComponent=this.chartAreaArray.pop();
     }
   }
+
   ngOnInit(): void {
-    //call draw chart method
+    this.createChart();
+  }
+
+  createChart(){
     google.charts.load('current', {packages: ['corechart']});
     google.charts.setOnLoadCallback(() => this.drawChart());
+  }
+
+  onResize(event){
+    this.createChart();
   }
 }
