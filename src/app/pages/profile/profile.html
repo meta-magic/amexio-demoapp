@@ -1,21 +1,18 @@
 <div class="row">
-  <div class="col-lg-12">
-    <table>
-      <td>
-        <tr>  Rating Received
-          <amexio-rating-input [(ngModel)]="rate"
-                               name="rate"
-                               [max]="max" name="rate"
-                               [readonly]="isReadonly">
-          </amexio-rating-input>
-        </tr>
-      </td>
-    </table>
+  <div class="col-lg-12 col-sm-12 col-xs-12">
+    <label class="col-xs-12"> Rating Received</label>
+    <div class="col-xs-12">
+      <amexio-rating-input [(ngModel)]="rate"
+                           name="rate"
+                           [max]="max" name="rate"
+                           [readonly]="isReadonly">
+      </amexio-rating-input>
+    </div>
   </div>
 </div>
 <br>
 <div class="row">
-  <div class="col-lg-6">
+  <div class="col-lg-6 col-sm-12 col-xs-12">
     <amexio-card-pane [enableHeader]="false"  [enableFooter]="false">
       <amexio-pane-body>
         <div style="text-align: center">
@@ -49,7 +46,7 @@
     </amexio-card-pane>
   </div>
   <br>
-  <div class="col-lg-6">
+  <div class="col-lg-6 col-sm-12 col-xs-12">
     <amexio-card-pane [enableHeader]="false" [enableFooter]="false">
       <amexio-pane-body>
         <table>
@@ -77,7 +74,7 @@
 </div>
 <br/>
 <div class="row">
-  <div class="col-lg-12">
+  <div class="col-lg-12 col-sm-12 col-xs-12">
     <amexio-card-pane [enableFooter]="false">
       <amexio-pane-header>
         Contacts
@@ -88,18 +85,14 @@
                         [enableCheckbox] = "false" [dataReader]="'response.data'"
                         [displayField]="'name'">
           <ng-template #amexioBodyTmpl let-row="row">
-            <table>
-              <tr>
-                <td>
-                  <img class="rounded-circle" width="70" src="assets/images/profile/{{row.profile}}"/>
-                </td>
-                <td style="padding: 10px; vertical-align: top;">
-                  <b>{{row.name}}</b>
-                  <br>
-                  <p>{{row.email}}</p>
-                </td>
-              </tr>
-            </table>
+          <div class="row">
+            <div class="col-lg-4 col-sm-12 col-xs-12 " style="text-align: center">
+              <img class="rounded-circle" width="70" src="assets/images/profile/{{row.profile}}"/>
+            </div>
+            <div class="col-lg-8 col-sm-12 col-xs-12" style="text-align: center">
+              <b>{{row.name}}</b><br> <p>{{row.email}}</p>
+            </div>
+          </div>
           </ng-template>
         </amexio-listbox>
 
