@@ -81,8 +81,6 @@ export class ListBoxComponent implements OnInit{
         if(this.data){
             this.setData(this.data);
         }
-
-        console.log(this.viewData);
     }
 
     setData(httpResponse : any){

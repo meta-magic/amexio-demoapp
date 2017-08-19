@@ -21,7 +21,7 @@
     "expand":true,
     "childrens": [
       {
-        "text": "Sample",
+        "text": "Sample Form",
         "icon" : "fa fa-laptop fa-fw",
         "routerLink":"/home/sample"
       },
