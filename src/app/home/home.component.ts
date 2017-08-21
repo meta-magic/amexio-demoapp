@@ -10,7 +10,6 @@ export class HomeComponent implements OnInit{
   deviceHeight : any;
   deviceWidth : any;
   constructor(private _router : Router){
-    this._router.navigate(['/home/dashboard']);
   }
   routeToLink(data: any){
     if(!data.hasOwnProperty('childrens') && data.routerLink)

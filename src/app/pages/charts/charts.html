@@ -1,0 +1,214 @@
+<div class="row">
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Bubble Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-bubble [height]="'400px'" [width]="'100%'" [data]="bubbleChartData" [colorAxis]="['yellow', 'red']">
+          <amexio-chart-title [title]="'Correlation between life expectancy, fertility rate'"></amexio-chart-title>
+          <amexio-chart-horizontal-axis [title]="'Life Expectancy'"></amexio-chart-horizontal-axis>
+          <amexio-chart-vertical-axis [title]="'Fertility Rate'"></amexio-chart-vertical-axis>
+        </amexio-chart-bubble>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Color Axis Bubble Chart </amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-bubble [height]="'400px'" [width]="'100%'" [data]="bubbleChartColorAxis" [colorAxis]="['yellow', 'red']">
+        </amexio-chart-bubble>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Combo Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-combo [height]="'400px'" [width]="'100%'" [data]="comboChartData">
+          <amexio-chart-title [title]="'Monthly Coffee Production by Country'"></amexio-chart-title>
+          <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+          <amexio-chart-horizontal-axis [title]="'Month'"></amexio-chart-horizontal-axis>
+          <amexio-chart-vertical-axis [title]="'Cups'"></amexio-chart-vertical-axis>
+        </amexio-chart-combo>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Scatter Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-scatter [height]="'400px'" [data]="scatterChartData">
+          <amexio-chart-title [title]="'Age vs. Weight comparison'"></amexio-chart-title>
+          <amexio-chart-horizontal-axis [title]="'Age'"></amexio-chart-horizontal-axis>
+          <amexio-chart-vertical-axis [title]="'Weight'"></amexio-chart-vertical-axis>
+        </amexio-chart-scatter>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Donut Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-donut [height]="'400px'" [width]="'100%'"  [data]="pieChartData">
+          <amexio-chart-title [title]="'My Daily Activities'"></amexio-chart-title>
+          <amexio-chart-legend [legendPosition]="'right'"></amexio-chart-legend>
+        </amexio-chart-donut>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Candlestick Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-candlestick [width]="'100%'" [height]="'400px'" [data]="candlestickChartData">
+          <amexio-chart-title [title]="'Stock Statistics'"></amexio-chart-title>
+        </amexio-chart-candlestick>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Candlestick Waterfall Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-candlestick-waterfall [width]="'100%'" [height]="'400px'" [data]="candlestickWaterfallChart" [barWidthGroup]="'100%'" [fallingColorOfBar]="'#a52714'" [risingColorOfBar]="'#0f9d58'">
+          <amexio-chart-title [title]="'Stock Statistics'"></amexio-chart-title>
+        </amexio-chart-candlestick-waterfall>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Histogram Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-histogram [height]="'400px'" [width]="'100%'" [data]="histogramChartData">
+          <amexio-chart-title [title]="'Lengths of dinosaurs, in meters'"></amexio-chart-title>
+        </amexio-chart-histogram>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Pie Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-pie [height]="'400px'" [width]="'100%'"  [data]="pieChartData">
+          <amexio-chart-title [title]="'My Daily Activities'"></amexio-chart-title>
+          <amexio-chart-legend [legendPosition]="'right'"></amexio-chart-legend>
+        </amexio-chart-pie>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>3D Pie Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-pie [height]="'400px'" [width]="'100%'" [is3D]="true" [data]="pieChartData">
+          <amexio-chart-title [title]="'My Daily Activities'"></amexio-chart-title>
+          <amexio-chart-legend [legendPosition]="'right'"></amexio-chart-legend>
+        </amexio-chart-pie>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-12">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Line Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-line [data]="lineChartData" [height]="'400px'" [width]="'100%'" >
+          <amexio-chart-legend [legendPosition]="'top'"></amexio-chart-legend>
+        </amexio-chart-line>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-12">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Area Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-area [data]="areaChartData" [height]="'500px'" [width]="'100%'" >
+          <amexio-chart-title [title]="'Company Performance'"></amexio-chart-title>
+          <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+        </amexio-chart-area>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-12">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>TimeLine Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-timeline [data]="timelineChartData" [width]="'100%'" ></amexio-chart-timeline>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+
+</div>
+<div class="row">
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Bar Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-bar [data]="barChartData" [height]="'400px'" [width]="'100%'" >
+          <amexio-chart-title [title]="'Population of Largest U.S. Cities'"></amexio-chart-title>
+          <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+        </amexio-chart-bar>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Stack Bar Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-bar [data]="barStackChartData" [height]="'400px'" [width]="'100%'" [isStacked]="true">
+          <amexio-chart-title [title]="'Population of Largest U.S. Cities'"></amexio-chart-title>
+          <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+        </amexio-chart-bar>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <br>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Bar Chart with comparision</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-bar [data]="comparasionChartData" [height]="'400px'" [width]="'100%'">
+          <amexio-chart-title [title]="'Population of Largest U.S. Cities'"></amexio-chart-title>
+          <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+        </amexio-chart-bar>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Column Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-column [data]="columnChartData" [height]="'400px'" [width]="'100%'" >
+          <amexio-chart-title [title]="'Motivation and Energy Level Throughout the Day'"></amexio-chart-title>
+          <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+        </amexio-chart-column>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <br>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Stack Column Chart</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-column [data]="columnStackChartData" [height]="'400px'"[width]="'100%'"  [isStacked]="true">
+          <amexio-chart-title [title]="'Motivation Level Throughout the Day'"></amexio-chart-title>
+          <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+        </amexio-chart-column>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+  <div class="col-lg-6">
+    <amexio-card-pane [enableFooter]="false" [enableHeader]="true">
+      <amexio-pane-header>Column Chart with comparision</amexio-pane-header>
+      <amexio-pane-body>
+        <amexio-chart-column [data]="columnStackChartData" [height]="'400px'"[width]="'100%'" >
+          <amexio-chart-title [title]="'Motivation Level Throughout the Day'"></amexio-chart-title>
+          <amexio-chart-legend [legendPosition]="'bottom'"></amexio-chart-legend>
+        </amexio-chart-column>
+      </amexio-pane-body>
+    </amexio-card-pane>
+  </div>
+
+</div>
+

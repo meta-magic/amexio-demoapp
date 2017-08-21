@@ -11,8 +11,6 @@ export class AppComponent implements OnInit{
   deviceHeight : any;
   deviceWidth : any;
   constructor(private _router : Router){
-    //this._router.navigate(['/home/sample']);
-    this._router.navigate(['/landing']);
   }
   routeToLink(data: any){
     if(!data.hasOwnProperty('childrens') && data.routerLink)

@@ -64,6 +64,15 @@ import {DataPointNorthComponent} from "./datapoints/north.component";
 import {DataPointCenterComponent} from "./datapoints/center.component";
 import {DataPointEastComponent} from "./datapoints/east.component";
 import {DataPointWestComponent} from "./datapoints/west.component";
+import {ComboChartComponent} from "./modules/charts/combochart/combo.chart.component";
+import {VerticalAxisComponent} from "./modules/charts/verticalaxis/chart.verticalaxis.component";
+import {HorizontalAxisComponent} from "./modules/charts/horizontalaxis/chart.horizontalaxis.component";
+import {BubbleChartComponent} from "./modules/charts/bubblechart/bubble.chart.component";
+import {ScatterChartComponent} from "./modules/charts/scatterchart/scatter.chart.component";
+import {TreeMapComponent} from "./modules/charts/treemap/treemap.map.component";
+import {MapTitleComponent} from "./modules/charts/maptitle/map.title.component";
+import {CandlestickChartComponent} from "./modules/charts/candlestickchart/candlestick.chart.component";
+import {CandlestickWaterfallChartComponent} from "./modules/charts/candlestickwaterfallchart/candlestickwaterfall.chart.component";
 
 export * from './button/button.component';
 export * from './common.http.service';
@@ -138,6 +147,15 @@ export * from "./modules/charts/gaugechart/gauge.chart.component";
 export * from "./modules/charts/geochart/geo.chart.component";
 export * from "./modules/charts/histogramchart/histogram.chart.component";
 export * from "./modules/charts/timelinechart/timeline.chart.component";
+export * from "./modules/charts/combochart/combo.chart.component";
+export * from "./modules/charts/verticalaxis/chart.verticalaxis.component";
+export * from "./modules/charts/horizontalaxis/chart.horizontalaxis.component";
+export * from "./modules/charts/bubblechart/bubble.chart.component";
+export * from "./modules/charts/scatterchart/scatter.chart.component";
+export * from "./modules/charts/treemap/treemap.map.component";
+export * from "./modules/charts/maptitle/map.title.component";
+export * from "./modules/charts/candlestickchart/candlestick.chart.component";
+export * from "./modules/charts/candlestickwaterfallchart/candlestickwaterfall.chart.component";
 
 @NgModule({
   imports: [
@@ -206,8 +224,16 @@ export * from "./modules/charts/timelinechart/timeline.chart.component";
     DataPointNorthComponent,
     DataPointCenterComponent,
     DataPointEastComponent,
-    DataPointWestComponent
-
+    DataPointWestComponent,
+    ComboChartComponent,
+    VerticalAxisComponent,
+    HorizontalAxisComponent,
+    BubbleChartComponent,
+    ScatterChartComponent,
+    TreeMapComponent,
+    MapTitleComponent,
+    CandlestickChartComponent,
+    CandlestickWaterfallChartComponent
   ],
   exports: [
     ButtonComponent,
@@ -269,7 +295,16 @@ export * from "./modules/charts/timelinechart/timeline.chart.component";
     DataPointNorthComponent,
     DataPointCenterComponent,
     DataPointEastComponent,
-    DataPointWestComponent
+    DataPointWestComponent,
+    ComboChartComponent,
+    VerticalAxisComponent,
+    HorizontalAxisComponent,
+    BubbleChartComponent,
+    ScatterChartComponent,
+    TreeMapComponent,
+    MapTitleComponent,
+    CandlestickChartComponent,
+    CandlestickWaterfallChartComponent
   ]
 })
 export class AmexioWidgetModule {

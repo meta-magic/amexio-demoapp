@@ -41,6 +41,15 @@ const routes: Routes = [
       },
       {
         path: 'sample', loadChildren: './../pages/pages/sample/sample.module#SampleModule'
+      },
+      {
+        path: 'charts', loadChildren: './../pages/charts/charts.module#ChartsModule'
+      },
+      {
+        path: 'maps', loadChildren: './../pages/maps/maps.module#MapsModule'
+      },
+      {
+        path: 'dashboard-template', loadChildren: './../pages/dashboardtemplate/dashboardtemplate.module#DashboardTemplateModule'
       }
     ]
   }

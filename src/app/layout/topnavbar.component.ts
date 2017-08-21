@@ -3,6 +3,7 @@
  */
 import {Component, Input} from '@angular/core';
 import {Http} from "@angular/http";
+import {Router} from "@angular/router";
 
 @Component({
   moduleId: module.id,
@@ -16,7 +17,7 @@ export class TopNavBarComponent {
   menuData : any[] = [];
   data : any=[];
 
-  constructor(public _http : Http){
+  constructor(public _http : Http,private _router : Router){
     this._http.get('assets/data/menus/topmenu.json').subscribe(
       response=>{
         this.httpResponse = response.json()
@@ -31,7 +32,9 @@ export class TopNavBarComponent {
   }
 
   onClick(menuItem:any){
-
+    if(menuItem.menuId && menuItem.menuId==1){
+      this._router.navigate(['/home/dashboard']);
+    }
     if(menuItem.menuId && menuItem.menuId==2){
       this.data.push({'msg':'You have new email', 'type' : 'info'});
     }

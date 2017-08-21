@@ -1,7 +1,7 @@
 {
   "data":[
   {
-    "text": "Dashboard",
+    "text": "Home",
     "icon" : "fa fa-desktop fa-fw",
     "routerLink" : "/home/dashboard"
   },
@@ -58,5 +58,19 @@
           "routerLink":"/home/group-by-issue"
         }
       ]
+    },
+    {
+      "text": "Charts",
+      "icon" : "fa fa-bar-chart fa-fw",
+      "routerLink" : "/home/charts"
+    },
+    {
+      "text": "Maps",
+      "icon" : "fa fa-map-marker fa-fw",
+      "routerLink" : "/home/maps"
+    },{
+      "text": "Dashboard",
+      "icon" : "fa fa-television fa-fw",
+      "routerLink" : "/home/dashboard-template"
     }
 ]}

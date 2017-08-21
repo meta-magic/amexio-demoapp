@@ -9,7 +9,7 @@ import {AmexioWidgetModule} from "../components/index";
 import {CommonHttpService} from "../components/common.http.service";
 import {ChartLoaderService} from "../components/modules/charts/chart.loader.service";
 const APP_ROUTE: Routes = [
-  { path: '', component: AppComponent},
+  { path: '', component: LandingPageComponent},
   {path:'landing',component:LandingPageComponent},
   {path:'home',loadChildren:'./home/home.module#HomeModule'}
 ];
