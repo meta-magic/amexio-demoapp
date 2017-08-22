@@ -10,11 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class EmployeeRegistrationComponent implements OnInit {
- resp:any;
   countryName:string;
   stateName:string;
   cityName:string;
-  date3:any;
   currentDate : Date = new Date();
   time : Date = new Date();
   datepickerOpts = {
@@ -26,23 +24,6 @@ export class EmployeeRegistrationComponent implements OnInit {
     format: 'D, d MM yyyy'
   };
   constructor() {
-     this.resp={
-      "alarm" : null,
-      "response" : {
-        "success": true,
-        "message": "Fetching  Data  Request Succeeded: Sport",
-        "data": [
-          {"sportName": "Cricket","code": "Ck"},
-          {"sportName": "Swimming","code": "Sw"},
-          {"sportName": "Golf","code": "Glf"},
-          {"sportName": "Hockey","code": "Hky"},
-          {"sportName": "Soccer","code": "Scr"},
-          {"sportName": "Formula One","code": "F1"}
-        ]
-      }
-    };
-  }
-  getSingleVal(event:any){
 
   }
   getCountry(event:any){
@@ -52,7 +33,7 @@ export class EmployeeRegistrationComponent implements OnInit {
 
   }
   getState(event:any){
-
+  debugger;
   }
   ngOnInit() { }
 }

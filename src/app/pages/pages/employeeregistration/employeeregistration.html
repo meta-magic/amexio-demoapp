@@ -80,7 +80,7 @@
                   [httpUrl]="'assets/data/state.json'"
                   [httpMethod]="'get'"
                   [displayField]="'stateName'"
-                  [valueField]="'stateId'"
+                  [valueField]="'stateCode'"
                   [width]="'250px'"
                   (onSingleSelect)="getState($event)">
                 </amexio-dropdown>
@@ -95,7 +95,7 @@
                   [httpUrl]="'assets/data/city.json'"
                   [httpMethod]="'get'"
                   [displayField]="'cityName'"
-                  [valueField]="'cityId'"
+                  [valueField]="'cityCode'"
                   [width]="'250px'"
                   (onSingleSelect)="getCity($event)">
                 </amexio-dropdown>
