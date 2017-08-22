@@ -16,24 +16,24 @@ import {ButtonGroupActionComponent} from './buttongroup.action.component';
 declare var $;
 @Component({
   selector: 'amexio-btn-group',
-  template: `    
-      <div [class]="btnGroupStyleClass" role="group" [attr.id]="elementId">
-        <button *ngFor="let data of buttonData" type="button" (click)="buttonClick($event,data)"
-                [class]="data.btnStyleClass"
-                [attr.fieldName] = "data.fieldName"
-                [attr.disabled] = "data.disabled ? true: null"
-                data-toggle="tooltip" [attr.data-placement]="popoverPlacement" [attr.title]="data.tooltipMessage"
-        >
-          <ng-container *ngIf="data.isLoading">
-            <i class="fa fa-refresh fa-spin " aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
-          </ng-container>
-          {{data.label}}
-          <ng-container *ngIf="data.iconStyleClass!=null">
-            <i [class]="data.iconStyleClass" aria-hidden="true"></i>
-          </ng-container>
-        </button>
-      </div>
-      <ng-content></ng-content>
+  template: `
+    <div [class]="btnGroupStyleClass" role="group" [attr.id]="elementId">
+      <button *ngFor="let data of buttonData" type="button" (click)="buttonClick($event,data)"
+              [class]="data.btnStyleClass"
+              [attr.fieldName]="data.fieldName"
+              [attr.disabled]="data.disabled ? true: null"
+              data-toggle="tooltip" [attr.data-placement]="popoverPlacement" [attr.title]="data.tooltipMessage"
+      >
+        <ng-container *ngIf="data.hasLoaded">
+          <i class="fa fa-refresh fa-spin " aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;
+        </ng-container>
+        {{data.label}}
+        <ng-container *ngIf="data.iconStyleClass!=null">
+          <i [class]="data.iconStyleClass" aria-hidden="true"></i>
+        </ng-container>
+      </button>
+    </div>
+    <ng-content></ng-content>
   `,
 
 })
@@ -96,7 +96,7 @@ export class ButtonGroupComponent implements OnInit, AfterContentInit, AfterView
         label : buttonConfig.label, onClick : buttonConfig.onClick,
         icon : buttonConfig.icon, type: buttonConfig.type,
         tooltipMessage: buttonConfig.tooltipMessage, onClickRoute: buttonConfig.onClickRoute,
-        disabled: buttonConfig.disabled, isLoading: buttonConfig.isLoading,
+        disabled: buttonConfig.disabled, isLoading: buttonConfig.hasLoaded,
         fieldName: buttonConfig.fieldName, btnStyleClass: buttonConfig.btnStyleClass,
         iconStyleClass: buttonConfig.iconStyleClass, btnSizeStyleClass: buttonConfig.btnSizeStyleClass,
         hasToolTip : buttonConfig.hasToolTip, elementId: buttonConfig.elementId};

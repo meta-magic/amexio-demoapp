@@ -127,8 +127,8 @@ export class ButtonComponent implements OnInit , OnChanges, AfterViewInit {
   }
 
   ngOnChanges(change: SimpleChanges) {
-    /*console.log(change.isLoading);
-      if(change.isLoading){
+    /*console.log(change.hasLoaded);
+      if(change.hasLoaded){
         this.disabled = true;
       }*/ // TODO : Fix
   }
